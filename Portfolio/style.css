@@ -1,9 +1,0 @@
-/* Simple purple hover shadow for nav, ul, list items, and skill blocks */
-nav, ul, ul li, .skill {
-  transition: box-shadow 150ms ease;
-}
-
-nav:hover, ul:hover, ul li:hover, .skill:hover {
-  box-shadow: 0 0 0 3px rgba(128, 0, 128, 0.5), 0 8px 22px rgba(128, 0, 128, 0.35);
-}
-
