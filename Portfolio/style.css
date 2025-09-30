@@ -1,0 +1,191 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0 20px;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 0 30px 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.2);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+nav {
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease; 
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #667eea;
+    color: white;
+}
+
+.banner {
+    background-color: #fff;
+    max-width: 660px;
+    margin: 35px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(102, 126, 234, 0.1);
+}
+
+section {
+    max-width: 660px;
+    background-color: #fff;
+    margin: 35px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.07);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section h2 {
+    border-bottom: 3px solid #764ba2;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    color: #764ba2;
+    font-weight: 700;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 18px;
+    width: 100%;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.html {
+    background-color: #e44d26;
+    width: 80%;
+}
+
+.css {
+    background-color: #264de4;
+    width: 65%;
+}
+
+.design {
+    background-color: #6a1b9a;
+    width: 50%;
+}
+
+#updates ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+#testimonial {
+    background-color: #dcd6f7;
+    max-width: 660px;
+    margin: 35px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(118, 75, 162, 0.1);
+    font-style: italic;
+    color: #444;
+    text-align: center;
+}
+
+#testimonial blockquote {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+    quotes: "“" "”" "‘" "’";
+}
+
+#testimonial blockquote:before {
+    content: open-quote;
+}
+
+#testimonial blockquote:after {
+    content: close-quote;
+}
+
+
+header h1, .banner h2 {
+    animation: fadeInDown 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+footer {
+    max-width: 660px;
+    margin: 30px auto 20px auto;
+    padding: 12px;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+}
+nav:hover {
+    box-shadow: 0 4px 15px rgba(174, 114, 235, 0.7); 
+}
+section:hover {
+    box-shadow: 0 8px 25px rgba(169, 101, 236, 0.7); 
+    cursor: pointer;
+}
