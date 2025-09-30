@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Tech CSE Basics Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .quiz-container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #b3e0ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bb5;
+            text-align: center;
+            border-bottom: 2px solid #007bb5;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .question-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .question-block p {
+            font-weight: bold;
+            color: #005f8c;
+            margin-top: 0;
+        }
+
+        .option-label {
+            display: block;
+            padding: 8px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .option-label:hover {
+            background-color: #e0f2f1;
+        }
+        
+        .option-label input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>B.Tech CSE Foundations Quiz</h1>
+        
+        <form onsubmit="return false;">
+            <!-- Question 1: Computer Fundamentals -->
+            <div class="question-block">
+                <p>1. What does the acronym CPU stand for?</p>
+                
+                <label class="option-label">
+                    <input type="radio" name="q1" value="a"> Central Power Unit
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="b"> Central Processing Unit
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="c"> Computer Program Utility
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q1" value="d"> Core Performance Unit
+                </label>
+            </div>
+
+            <!-- Question 2: Data Structures -->
+            <div class="question-block">
+                <p>2. Which data structure operates on a Last-In, First-Out (LIFO) principle?</p>
+                
+                <label class="option-label">
+                    <input type="radio" name="q2" value="a"> Queue
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="b"> Array
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="c"> Stack
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q2" value="d"> Linked List
+                </label>
+            </div>
+
+            <!-- Question 3: Web Basics -->
+            <div class="question-block">
+                <p>3. What is the fundamental building block of all web pages?</p>
+                
+                <label class="option-label">
+                    <input type="radio" name="q3" value="a"> CSS
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="b"> JavaScript
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="c"> Python
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q3" value="d"> HTML
+                </label>
+            </div>
+
+            <!-- Question 4: Programming (C/C++ basics) -->
+            <div class="question-block">
+                <p>4. In most C-style programming languages, which symbol is used to terminate a statement?</p>
+                
+                <label class="option-label">
+                    <input type="radio" name="q4" value="a"> Colon (:)
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="b"> Period (.)
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="c"> Semicolon (;)
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q4" value="d"> Comma (,)
+                </label>
+            </div>
+
+            <!-- Question 5: Operating Systems -->
+            <div class="question-block">
+                <p>5. What is the primary function of an Operating System (OS)?</p>
+                
+                <label class="option-label">
+                    <input type="radio" name="q5" value="a"> Displaying websites
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="b"> Running virus scans
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="c"> Managing hardware and software resources
+                </label>
+                <label class="option-label">
+                    <input type="radio" name="q5" value="d"> Writing programming code
+                </label>
+            </div>
+            
+            <button class="submit-button" onclick="this.textContent='Submitted'; this.disabled=true; this.style.backgroundColor='#007bb5';">Submit Answers</button>
+
+        </form>
+    </div>
+</body>
+</html>
