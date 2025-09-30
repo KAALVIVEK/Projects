@@ -1,0 +1,23 @@
+/* Global hover effect: purple box-shadow on hovered elements */
+:root {
+  --hover-shadow-color: rgba(128, 0, 128, 0.55);
+  --hover-shadow-elev: rgba(128, 0, 128, 0.35);
+}
+
+/* Smooth transition for shadow on all elements except document roots */
+*:not(html):not(body) {
+  transition: box-shadow 150ms ease;
+}
+
+/* Apply purple box-shadow when any element is hovered */
+*:not(html):not(body):hover {
+  box-shadow: 0 0 0 3px var(--hover-shadow-color),
+              0 8px 22px var(--hover-shadow-elev);
+}
+
+/* Improve keyboard accessibility with a visible focus ring */
+*:focus-visible {
+  outline: 2px solid rgba(128, 0, 128, 0.8);
+  outline-offset: 2px;
+}
+
